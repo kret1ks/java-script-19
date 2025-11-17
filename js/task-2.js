@@ -12,5 +12,5 @@ inputRef.addEventListener("input", (event)=>{
         spanRef.textContent = event.target.value;
     }
         // console.log(event.target.value);
-        
+
 })
