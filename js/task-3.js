@@ -8,7 +8,7 @@ const inputRef = document.querySelector("#validation-input")
 inputRef.addEventListener("blur", onInputBluer)
 
 function onInputBluer(event){
-    const requiredLenght =Number(event.target.dataset.length)
+    const requiredLenght = Number(event.target.dataset.length)
     const curentLength = event.target.value.length
     if(requiredLenght === curentLength){
         inputRef.classList.add("valid")
