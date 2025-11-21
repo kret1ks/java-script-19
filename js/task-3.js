@@ -9,7 +9,11 @@ inputRef.addEventListener("blur", onInputBluer)
 
 function onInputBluer(event){
     const requiredLenght = Number(event.target.dataset.length)
+
     const curentLength = event.target.value.length
+
+    inputRef.classList.remove("valide", "invalid")
+
     if(requiredLenght === curentLength){
         inputRef.classList.add("valid")
     }else{
